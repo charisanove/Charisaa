@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login Lilac</title>
+    <style>
+        /* CSS untuk Styling */
+        :root {
+            /* Definisi Warna */
+            --lilac-bg: #E6E0F8;    /* Ungu Muda/Lilac untuk latar belakang */
+            --lilac-primary: #8E7CCB; /* Ungu sedang untuk tombol/elemen utama */
+            --lilac-shadow: #A895E5; /* Bayangan/aksen */
+            --text-color: #333333; /* Warna teks gelap */
+            --white-color: #ffffff; /* Warna putih */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--lilac-bg); /* Latar belakang Ungu Muda */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: var(--white-color);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            color: var(--lilac-primary);
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--lilac-shadow);
+            border-radius: 8px;
+            box-sizing: border-box; /* Agar padding tidak menambah lebar */
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: var(--lilac-primary);
+            outline: none; /* Hilangkan garis fokus default browser */
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 15px;
+            background-color: var(--lilac-primary); /* Warna Ungu Primer */
+            color: var(--white-color);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #7260A3; /* Sedikit lebih gelap saat di-hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>👋 Selamat Datang</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Nama Pengguna (Username)</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan Nama Pengguna Anda" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Kata Sandi (Password)</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan Kata Sandi Anda" required>
+            </div>
+
+            <button type="submit" class="login-button">Masuk</button>
+        </form>
+    </div>
+
+</body>
+</html>
